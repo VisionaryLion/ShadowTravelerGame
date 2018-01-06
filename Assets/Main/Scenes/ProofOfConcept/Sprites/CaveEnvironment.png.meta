@@ -1,0 +1,474 @@
+fileFormatVersion: 2
+guid: a4b2158ca3c2b1a41b6e0ae4415b4d29
+timeCreated: 1512619419
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bonfire1
+    21300002: Bonfire2
+    21300004: Bonfire3
+    21300006: CaveWall1
+    21300008: CaveWall2
+    21300010: CaveWall3
+    21300012: CaveWall4
+    21300014: CaveWall5
+    21300016: CaveWall6
+    21300018: Door1
+    21300020: Door2
+    21300022: Light1_1
+    21300024: Light1_2
+    21300026: Light2_1
+    21300028: Light2_2
+    21300030: Light3_1
+    21300032: Light3_2
+    21300034: Light4_1
+    21300036: Light4_2
+    21300038: StonePlatform1
+    21300040: StonePlatform2
+    21300042: StonePlatform3
+    21300044: StonePlatform4
+    21300046: StonePlatform5
+    21300048: StonePlatform6
+    21300050: SwitchOff
+    21300052: SwitchOn
+    21300054: Waterfall1
+    21300056: Waterfall2
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bonfire1
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 124
+        width: 100
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 1.1904762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Bonfire2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 168
+        width: 100
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8196721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Bonfire3
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 231
+        width: 100
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65789473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CaveWall1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 411
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CaveWall2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 309
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CaveWall3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CaveWall4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 105
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CaveWall5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CaveWall6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 411
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Door1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 3
+        width: 35
+        height: 100
+      alignment: 9
+      pivot: {x: 1.4285715, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Door2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 3
+        width: 59
+        height: 100
+      alignment: 9
+      pivot: {x: 0.84745765, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light1_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 210
+        width: 88
+        height: 97
+      alignment: 9
+      pivot: {x: 0.53409094, y: 0.5154639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light1_2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 411
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light2_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 6
+        width: 94
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48453608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light2_2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 411
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light3_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 114
+        width: 97
+        height: 94
+      alignment: 9
+      pivot: {x: 0.48453608, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light3_2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 411
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light4_1
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 34
+        width: 91
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5494506, y: 0.4659091}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Light4_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 309
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StonePlatform1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 207
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StonePlatform2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 105
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StonePlatform3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StonePlatform4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 309
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StonePlatform5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 309
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: StonePlatform6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 309
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwitchOff
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 12
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwitchOn
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 12
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Waterfall1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 207
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Waterfall2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 105
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
