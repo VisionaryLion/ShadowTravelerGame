@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Character Builder</title>
+</head>
+<body>
+    <img id="characterImage" src="Goblin_Seer.png" />
+    <canvas id="myCanvas" width="100" height="100"></canvas>
+    <img id="outputImage" />
+</body>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+
+            var value = false;
+            context['imageSmoothingEnabled'] = value;
+            context['mozImageSmoothingEnabled'] = value;
+            context['oImageSmoothingEnabled'] = value;
+            context['webkitImageSmoothingEnabled'] = value;
+            context['msImageSmoothingEnabled'] = value;
+
+            context.fillStyle = "rgba(255,255,255,1)";
+            context.fillRect(0, 0, 160, 160);
+
+            for (var y = 0; y < 4; y++) {
+                for (var x = 0; x < 4; x++) {
+                    if (!(x === 3 && y === 1)) {
+                        context.drawImage(document.getElementById("characterImage"), x * 16, y * 16, 16, 16, 0, 0, 100, 100);
+                    }
+                }
+            }
+
+            context.drawImage(document.getElementById("characterImage"), 0 * 16, 0 * 16, 16, 16, 0, 0, 100, 100);
+
+            var output = canvas.toDataURL("image/png");
+            var outputImage = document.getElementById("outputImage");
+            outputImage.src = output;
+        });
+    </script>
+</html> 
