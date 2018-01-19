@@ -26,6 +26,7 @@ public class playerHealth : MonoBehaviour {
 
     public void addDamage(float damage) {
         if (damage <= 0) return; //end the script if there's no damange
+        Instantiate(deathFX, transform.position, transform.rotation); //spawns the death particle effects
         currentHealth -= damage;
 
         if (currentHealth <= 0) {
@@ -36,6 +37,6 @@ public class playerHealth : MonoBehaviour {
     public void makeDead() {
         Instantiate(deathFX, transform.position, transform.rotation); //spawns the death particle effects
         Destroy(gameObject); //destroys the player
-        //SceneManager.LoadScene("TheCave"); //reloads the scene
+        SceneManager.LoadScene("TheCave"); //reloads the scene
     }
 }

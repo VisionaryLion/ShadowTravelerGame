@@ -21,7 +21,7 @@ public class enemyDamage : MonoBehaviour {
 	}
 
     //damage the player as long as they stay within the trigger
-    void OnTriggerStay2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
         //only do damage if the object is tagged as player and the current time is past the time limit for when the enemy can do damage again
         if (other.tag == "Player" && nextDamage < Time.time) {
             playerHealth thePlayerHealth = other.gameObject.GetComponent<playerHealth>(); //gets the health of the other collider, in this instance it's the player
