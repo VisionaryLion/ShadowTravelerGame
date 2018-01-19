@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemyHealth : MonoBehaviour {
 
     public float enemyMaxHealth; //max health the enemy will have
+    public GameObject deathFX; //particles for the enemy's death
 
     float currentHealth; //current value for the enemy's health
 
@@ -26,6 +27,7 @@ public class enemyHealth : MonoBehaviour {
 
     // Enemy death function - drops, death animation, etc.
     void makeDead() {
+        Instantiate(deathFX, transform.position, transform.rotation); //spawns the death particle effects
         Destroy(gameObject); //deletes the gameobject
     }
 }
