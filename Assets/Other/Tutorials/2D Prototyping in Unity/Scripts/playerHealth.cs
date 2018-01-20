@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour {
 
@@ -11,13 +12,19 @@ public class playerHealth : MonoBehaviour {
     float currentHealth; //player's current health, allows to track if they are alive or dead
 
     playerController controlMovement;
+
+    //HUD Variables
+    public Slider healthSlider;
     
     // Use this for initialization
 	void Start () {
         currentHealth = fullHealth;
-
         controlMovement = GetComponent<playerController>();
-	}
+
+        //HUD Initilization
+        healthSlider.maxValue = fullHealth; //sets the max value of the health slider to the max health of the player
+        healthSlider.value = fullHealth; //sets the starting value of the health slider to the full health of the player
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,6 +35,7 @@ public class playerHealth : MonoBehaviour {
         if (damage <= 0) return; //end the script if there's no damange
         Instantiate(deathFX, transform.position, transform.rotation); //spawns the death particle effects
         currentHealth -= damage;
+        healthSlider.value = currentHealth;
 
         if (currentHealth <= 0) {
             makeDead();
