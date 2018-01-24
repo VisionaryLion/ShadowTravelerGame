@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: 1d2cd4a15a246c648944b4f8d9ffcb97
-timeCreated: 1516732621
+guid: 347392383e14aaf46822199390e0a77e
+timeCreated: 1516810593
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player_Run_SpriteSheet_0
-    21300002: Player_Run_SpriteSheet_1
-    21300004: Player_Run_SpriteSheet_2
-    21300006: Player_Run_SpriteSheet_3
-    21300008: Player_Run_SpriteSheet_4
-    21300010: Player_Run_SpriteSheet_5
-    21300012: Player_Run_SpriteSheet_6
-    21300014: Player_Run_SpriteSheet_7
+    21300000: PlayerIdle_0
+    21300002: PlayerIdle_1
+    21300004: PlayerIdle_2
+    21300006: PlayerIdle_0
+    21300008: PlayerIdle_1
+    21300010: PlayerIdle_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -86,104 +84,39 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Run_SpriteSheet_0
+      name: PlayerIdle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 39
-        height: 44
+        x: 3
+        y: 3
+        width: 19
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player_Run_SpriteSheet_1
+      name: PlayerIdle_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 39
-        height: 44
+        x: 25
+        y: 3
+        width: 19
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player_Run_SpriteSheet_2
+      name: PlayerIdle_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 0
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Player_Run_SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 0
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Player_Run_SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 0
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Player_Run_SpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 0
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Player_Run_SpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 0
-        width: 39
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Player_Run_SpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 0
-        width: 39
-        height: 44
+        x: 47
+        y: 3
+        width: 19
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

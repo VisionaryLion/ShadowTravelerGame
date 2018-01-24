@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0c7431f5b47490a4e97514a42071a9a5
-timeCreated: 1516729681
+timeCreated: 1516809154
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,10 @@ TextureImporter:
     21300002: Player_Fall_SpriteSheet_1
     21300004: Player_Fall_SpriteSheet_2
     21300006: Player_Fall_SpriteSheet_3
+    21300008: Player_Fall_0
+    21300010: Player_Fall_1
+    21300012: Player_Fall_2
+    21300014: Player_Fall_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -82,7 +86,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Fall_SpriteSheet_0
+      name: Player_Fall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -95,7 +99,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player_Fall_SpriteSheet_1
+      name: Player_Fall_1
       rect:
         serializedVersion: 2
         x: 26
@@ -108,7 +112,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player_Fall_SpriteSheet_2
+      name: Player_Fall_2
       rect:
         serializedVersion: 2
         x: 52
@@ -121,7 +125,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Player_Fall_SpriteSheet_3
+      name: Player_Fall_3
       rect:
         serializedVersion: 2
         x: 78
