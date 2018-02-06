@@ -9,7 +9,7 @@ public class projectileController : MonoBehaviour {
     Rigidbody2D myRB; //reference to the rigidbody on the existing object, wherever the script is look for a rigidbody
 
 	// Use this for initialization
-	void Awake () {
+	void Start () {
         myRB = GetComponent<Rigidbody2D>(); //looking for the rigidbody that is existing on this object
         if(transform.localRotation.z>0) { //checks if the object has rotation
             myRB.AddForce(new Vector2(-1, 0) * rocketSpeed, ForceMode2D.Impulse); //adds an instant force to the rocket based on a negative X axis value of 1 times the speed of the rocket, making the rocket go to the left
