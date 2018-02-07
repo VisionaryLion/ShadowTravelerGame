@@ -9,7 +9,7 @@ public class playerController : MonoBehaviour {
 
     //jumping variables
     bool grounded = false; //starts the player in the air
-    float groundCheckRadius = 0.2f; //size of the ground check circle
+    float groundCheckRadius = 0.1f; //size of the ground check circle
     public LayerMask groundLayer; //layer to check for the circle
     public Transform groundCheck; //position of the circle
     public float jumpHeight; //force of the jump
