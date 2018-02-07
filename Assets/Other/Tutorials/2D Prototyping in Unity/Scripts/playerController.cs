@@ -35,12 +35,13 @@ public class playerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        
+
         //player jumping
         if (grounded && Input.GetAxis("Jump") > 0) { //checks if the player is on the ground and hit the jump button
             grounded = false;
             myAnim.SetBool("isGrounded", grounded); //assigns isGrounded (parameter from the animator) to the bool variable that checks if the player is grounded or not
             myRB.AddForce(new Vector2(0, jumpHeight)); //adds force to the player's Y
+            Debug.Log(myRB.velocity);
         }
 
         //player shooting
