@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c9a4335ddf834ba48af4b80476507758
-timeCreated: 1518096457
+timeCreated: 1518102847
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -41,26 +41,26 @@ TextureImporter:
     21300068: Cave_34
     21300070: Cave_35
     21300072: Cave_36
-    21300074: Cave_37
-    21300076: Cave_38
-    21300078: Cave_39
-    21300080: Cave_40
-    21300082: Cave_41
+    21300074: Cave_33
+    21300076: Cave_34
+    21300078: Cave_35
+    21300080: Cave_36
+    21300082: Cave_37
     21300084: Cave_42
     21300086: Cave_43
     21300088: Cave_44
     21300090: Cave_45
-    21300092: Cave_46
-    21300094: Cave_47
-    21300096: Cave_48
-    21300098: Cave_49
-    21300100: Cave_50
+    21300092: Cave_38
+    21300094: Cave_39
+    21300096: Cave_40
+    21300098: Cave_41
+    21300100: Cave_42
     21300102: Cave_51
     21300104: Cave_52
     21300106: Cave_53
-    21300108: Cave_54
-    21300110: Cave_55
-    21300112: Cave_56
+    21300108: Cave_43
+    21300110: Cave_44
+    21300112: Cave_45
     21300114: Cave_57
     21300116: Cave_58
     21300118: Cave_59
@@ -83,6 +83,21 @@ TextureImporter:
     21300152: Cave_64
     21300154: Cave_71
     21300156: Cave_72
+    21300158: Cave_77
+    21300160: Cave_78
+    21300162: Cave_79
+    21300164: Cave_80
+    21300166: Cave_81
+    21300168: Cave_82
+    21300170: Cave_46
+    21300172: Cave_47
+    21300174: Cave_48
+    21300176: Cave_49
+    21300178: Cave_50
+    21300180: Cave_54
+    21300182: Cave_55
+    21300184: Cave_56
+    21300186: Cave_83
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -125,7 +140,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -1052,9 +1067,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1065,10 +1080,10 @@ TextureImporter:
       name: Cave_64
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,7 +1094,7 @@ TextureImporter:
       name: Cave_65
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 32
         width: 32
         height: 32
@@ -1093,7 +1108,7 @@ TextureImporter:
       name: Cave_66
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -1107,7 +1122,7 @@ TextureImporter:
       name: Cave_67
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 32
         width: 32
         height: 32
@@ -1121,7 +1136,7 @@ TextureImporter:
       name: Cave_68
       rect:
         serializedVersion: 2
-        x: 224
+        x: 160
         y: 32
         width: 32
         height: 32
@@ -1135,7 +1150,7 @@ TextureImporter:
       name: Cave_69
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 32
         width: 32
         height: 32
@@ -1149,7 +1164,7 @@ TextureImporter:
       name: Cave_70
       rect:
         serializedVersion: 2
-        x: 288
+        x: 224
         y: 32
         width: 32
         height: 32
@@ -1163,8 +1178,8 @@ TextureImporter:
       name: Cave_71
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 256
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1177,8 +1192,8 @@ TextureImporter:
       name: Cave_72
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 288
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -1191,7 +1206,7 @@ TextureImporter:
       name: Cave_73
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -1205,7 +1220,7 @@ TextureImporter:
       name: Cave_74
       rect:
         serializedVersion: 2
-        x: 224
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -1219,7 +1234,7 @@ TextureImporter:
       name: Cave_75
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 0
         width: 32
         height: 32
@@ -1231,6 +1246,90 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: Cave_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cave_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cave_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cave_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cave_80
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cave_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Cave_82
       rect:
         serializedVersion: 2
         x: 288
