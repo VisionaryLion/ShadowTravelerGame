@@ -45,6 +45,6 @@ public class playerHealth : MonoBehaviour {
     public void makeDead() {
         Instantiate(deathFX, transform.position, transform.rotation); //spawns the death particle effects
         Destroy(gameObject); //destroys the player
-        SceneManager.LoadScene("TheCave"); //reloads the scene
+        SceneManager.LoadScene("CaveTilemap"); //reloads the scene
     }
 }

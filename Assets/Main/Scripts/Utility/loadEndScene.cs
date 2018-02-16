@@ -21,7 +21,7 @@ public class loadEndScene : MonoBehaviour {
         //only load the scene if the object is tagged as player
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene("DemoEnd"); //loads assigned scene
+            SceneManager.LoadScene("DemoEndTilemap"); //loads assigned scene
         }
     }
 }
