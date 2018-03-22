@@ -25,7 +25,7 @@ public class playerController : MonoBehaviour {
     float nextFire = 0f; //time when the player can fire again
 
     // Use this for initialization
-	void Start () {
+    void Start () {
         myRB = GetComponent<Rigidbody2D>(); //GetComponent looks at the asset the script is attached to for a certain object
         myAnim = GetComponent<Animator>();
 
