@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class wallTorch : MonoBehaviour {
-
+    
     //item variables
     public GameObject playerTorch; //reference to the player's torch
 
@@ -23,7 +23,7 @@ public class wallTorch : MonoBehaviour {
         //only trigger if the object is tagged as player
         if (other.tag == "Player")
         {
-            Destroy(gameObject); //destroys the torch
+            Destroy(gameObject); //destroys the torch object
             playerTorch.SetActive(true);
             
         }

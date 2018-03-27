@@ -4,21 +4,50 @@ using UnityEngine;
 
 public class playerTorch : MonoBehaviour {
 
-    public SFLight lightToDim = null;
-    public float maxTime = 30; // 30 seconds
-
-    private float mEndTime = 0;
-    private float mStartTime = 0;
-
-    private void Awake()
-    {
-        mStartTime = Time.time;
-        mEndTime = mStartTime + maxTime;
+    public float delay;
+    public float fadeTime ;
+ 
+    private float fadeSpeed;
+    private float intensity;
+    private Color color;
+ 
+    void Start() {
+        fadeLight();
     }
 
-    private void Update()
-    {
-        if (lightToDim)
-            lightToDim.intensity = Mathf.InverseLerp(mEndTime, mStartTime, Time.time);
+    void Update() {
+        if (delay > 0.0) {
+            delay -= Time.deltaTime;
+        }
+
+        else if (intensity > 0.0) {
+            intensity -= fadeSpeed * Time.deltaTime;
+            GetComponent<SFLight>().intensity = intensity;
+        }
+    }
+
+    void fadeLight() {
+        if (GetComponent<SFLight>() == null)
+        {
+            Destroy(this);
+            return;
+        }
+
+        intensity = GetComponent<SFLight>().intensity;
+
+
+        fadeTime = Mathf.Abs(fadeTime);
+
+        if (fadeTime > 0.0)
+        {
+            fadeSpeed = intensity / fadeTime;
+        }
+
+        else
+        {
+            fadeSpeed = intensity;
+        }
+
+        //alpha = 1.0;
     }
 }
