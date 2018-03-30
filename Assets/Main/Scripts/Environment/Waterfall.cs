@@ -25,7 +25,7 @@ public class Waterfall : MonoBehaviour {
         //only trigger if the object is tagged as player
         if (other.tag == "Player")
         {
-            playerTorch.SetActive(false);
+            Destroy(playerTorch);
 
         }
     }
