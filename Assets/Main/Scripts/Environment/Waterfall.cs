@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Waterfall : MonoBehaviour {
 
-    //item variables
-    public GameObject playerTorch; //reference to the player's torch
-
 
     // Use this for initialization
     void Start()
@@ -22,10 +19,11 @@ public class Waterfall : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //only trigger if the object is tagged as player
-        if (other.tag == "Player")
+        //only trigger if the object is tagged as torch
+        if (other.tag == "Torch")
         {
-            Destroy(playerTorch);
+            Destroy(other.gameObject);
+            Debug.Log("Torch destroyed");
 
         }
     }
