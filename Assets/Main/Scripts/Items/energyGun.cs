@@ -10,8 +10,10 @@ public class energyGun : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+         
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,6 +25,9 @@ public class energyGun : MonoBehaviour {
         //only trigger if the object is tagged as player
         if (other.tag == "Player")
         {
+            GameObject thePlayer = GameObject.Find("player"); //find's the player game object
+            playerController playerScript = thePlayer.GetComponent<playerController>(); //
+            playerScript.hasGun = true; //activates the bool for allowing the player to shoot
             Instantiate(playerGun, gunArm.transform); //instantiate the torch at the torch arm's location with 0 rotation
             Destroy(gameObject); //destroys the gun object
 

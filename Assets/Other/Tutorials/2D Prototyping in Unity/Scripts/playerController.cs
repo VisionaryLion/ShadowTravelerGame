@@ -21,8 +21,9 @@ public class playerController : MonoBehaviour {
     //for shooting
     public Transform gunTip; //reference to the location of where the missle starts from
     public GameObject bullet; //reference to the missile/projectile
-    float fireRate = 0.5f; //how often the player can fire the missile or 1 rocket every X seconds
+    public float fireRate = 0.5f; //how often the player can fire the missile or 1 rocket every X seconds
     float nextFire = 0f; //time when the player can fire again
+    public bool hasGun = false; //starts the player without a gun
 
     // Use this for initialization
     void Start () {
@@ -45,7 +46,7 @@ public class playerController : MonoBehaviour {
         }
 
         //player shooting
-        if (Input.GetAxisRaw("Fire1") > 0) fireRocket(); //checks if the player hit the Fire1 button and then calls the fireRocket function
+        if (Input.GetAxisRaw("Fire1") > 0 && hasGun == true) fireRocket(); //checks if the player hit the Fire1 button and then calls the fireRocket function
     }
 
     // Update is called once per frame (no matter how long the frame took) VS FixedUpdate is called after a specific amount of time all the time (it's exact)
