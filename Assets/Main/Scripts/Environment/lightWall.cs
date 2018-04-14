@@ -19,10 +19,10 @@ public class lightWall : MonoBehaviour {
         //only trigger if the object is tagged as player
         if (other.tag == "Enemy")
         {
-            GameObject theEnemy = GameObject.Find("darkEnemy"); //find's the enemy game object
-            darkEnemy enemyScript = theEnemy.GetComponent<darkEnemy>(); //
-            enemyScript.lightPresent = true; //activates the bool for saying the enemy is near light
-            Debug.Log("Enemy is near light");
+            //GameObject theEnemy = GameObject.Find("darkEnemy"); //find's the enemy game object
+            //darkEnemy enemyScript = theEnemy.GetComponent<darkEnemy>(); //
+            //enemyScript.lightPresent = true; //activates the bool for saying the enemy is near light
+            //Debug.Log("Enemy is near light");
 
         }
     }
@@ -32,10 +32,10 @@ public class lightWall : MonoBehaviour {
         //only trigger if the object is tagged as player
         if (other.tag == "Enemy")
         {
-            GameObject theEnemy = GameObject.Find("darkEnemy"); //find's the enemy game object
-            darkEnemy enemyScript = theEnemy.GetComponent<darkEnemy>(); //
-            enemyScript.lightPresent = false; //activates the bool for saying the enemy is near light
-            Debug.Log("Enemy is away from light");
+            //GameObject theEnemy = GameObject.Find("darkEnemy"); //find's the enemy game object
+            //darkEnemy enemyScript = theEnemy.GetComponent<darkEnemy>(); //
+            //enemyScript.lightPresent = false; //activates the bool for saying the enemy is near light
+            //Debug.Log("Enemy is away from light");
 
         }
     }

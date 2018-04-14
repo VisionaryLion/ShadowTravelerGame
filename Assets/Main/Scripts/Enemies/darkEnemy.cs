@@ -4,47 +4,32 @@ using UnityEngine;
 
 public class darkEnemy : MonoBehaviour {
 
-    public Transform target;
-    public float speed;
-    private bool rangeEntered = false;
-    public bool lightPresent = false;
-    public GameObject darkEnemyObject;
+    public float speed; //how fast the enemy moves
+    public float stoppingDistance; //higher the number the further away the enemy will stop from the player 
+    public float retreatDistance; //when the enemy should back away from his target
 
-    void Update()
+    public Transform player;
+
+    void Start()
     {
-        if (rangeEntered == true && lightPresent == false)
-        {
-            float step = speed * Time.deltaTime;
-            darkEnemyObject.transform.position = Vector3.MoveTowards(darkEnemyObject.transform.position, target.position, step);
-        }
-
-        else if (lightPresent == true)
-        {
-            float step = speed * 0;
-            darkEnemyObject.transform.position = Vector3.MoveTowards(darkEnemyObject.transform.position, target.position, step);
-        }
-
+        player = GameObject.FindGameObjectWithTag("Player").transform; //finds the position of the object tagged player
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        
-        //only trigger if the object is tagged as player
-        if (other.tag == "Player")
+    void Update() {
+        //checks how far the player is from the enemy
+        if(Vector2.Distance(transform.position, player.position) > stoppingDistance) //if the enemy is too far away
         {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime); //the enemy moves closer to his target
 
-            rangeEntered = true;
+        } else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance) //if he is near enough to his target but not too near
+        {
+            transform.position = this.transform.position; //stops the enemy moving
 
+        } else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime); //the enemy moves closer to his target
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        //only trigger if the object is tagged as player
-        if (other.tag == "Player")
-        {
-            rangeEntered = false;
-
-        }
-    }
+ 
 }
