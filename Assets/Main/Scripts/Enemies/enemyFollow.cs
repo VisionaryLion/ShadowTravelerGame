@@ -77,7 +77,7 @@ public class enemyFollow : MonoBehaviour {
             }
 
             // Flip-Check
-            if (transform.position.x < horizontalPositionOld)
+            if (enemy.position.x < horizontalPositionOld)
             {
 
                 if (facingRight)
@@ -106,7 +106,7 @@ public class enemyFollow : MonoBehaviour {
             GameObject wp = (GameObject)WaypointPositions[currentWaypoint];
             Vector3 targetPosition = wp.transform.position;
 
-            targetPositionDelta = targetPosition - transform.position;
+            targetPositionDelta = targetPosition - enemy.transform.position;
 
             // if i´m near the next waypoint count one high
             if (targetPositionDelta.sqrMagnitude <= 0.01f)
@@ -126,15 +126,15 @@ public class enemyFollow : MonoBehaviour {
     protected virtual void Move()
     {
         moveDirection = targetPositionDelta.normalized * speed;
-        transform.Translate(moveDirection * Time.deltaTime, Space.World);
+        enemy.transform.Translate(moveDirection * Time.deltaTime, Space.World);
     }
 
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
+        Vector3 theScale = enemy.transform.localScale;
         theScale.x *= -1;
-        transform.localScale = theScale;
+        enemy.transform.localScale = theScale;
     }
 
     void OnTriggerEnter2D(Collider2D other)
