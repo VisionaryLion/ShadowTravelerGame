@@ -44,19 +44,42 @@ public class enemyController : MonoBehaviour {
         //find the player object
         player = GameObject.FindGameObjectWithTag("Player").transform; //finds the position of the object tagged player
 
-        if (playerInRange && !lightInRange && Vector2.Distance(transform.position, player.position) > stoppingDistance)
+        //dark enemy behavior
+        if (afraidofDark)
         {
-           transform.position = Vector2.MoveTowards(transform.position, player.position, followSpeed * Time.deltaTime); //the enemy moves closer to his target           
+            if (playerInRange && !lightInRange)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, followSpeed * Time.deltaTime); //the enemy moves closer to his target           
+            }
+
+            else if (playerInRange && lightInRange && Vector2.Distance(transform.position, player.position) > retreatDistance)
+            {
+                transform.position = this.transform.position; //stops the enemy moving
+            }
+
+            else if (playerInRange && lightInRange && Vector2.Distance(transform.position, player.position) < retreatDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, -followSpeed * Time.deltaTime); //the enemy moves away from his target
+            }
         }
 
-        else if (playerInRange && lightInRange && Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
+        //light enemy behavior
+        if (afraidofLight)
         {
-            transform.position = this.transform.position; //stops the enemy moving
-        }
+            if (playerInRange && lightInRange)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, followSpeed * Time.deltaTime); //the enemy moves closer to his target           
+            }
 
-        else if (playerInRange && lightInRange && Vector2.Distance(transform.position, player.position) < retreatDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, -followSpeed * Time.deltaTime); //the enemy moves away from his target
+            else if (playerInRange && !lightInRange && Vector2.Distance(transform.position, player.position) > retreatDistance)
+            {
+                transform.position = this.transform.position; //stops the enemy moving
+            }
+
+            else if (playerInRange && !lightInRange && Vector2.Distance(transform.position, player.position) < retreatDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, player.position, -followSpeed * Time.deltaTime); //the enemy moves away from his target
+            }
         }
 
     }
