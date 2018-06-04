@@ -8,6 +8,7 @@ public class playerHealth : MonoBehaviour {
 
     public float fullHealth; //max amount of health the player can have
     public GameObject deathFX; //particles for the player's death
+    public Vector3 respawnPoint; //respawn point
 
     float currentHealth; //player's current health, allows to track if they are alive or dead
 
@@ -24,6 +25,9 @@ public class playerHealth : MonoBehaviour {
         //HUD Initilization
         healthSlider.maxValue = fullHealth; //sets the max value of the health slider to the max health of the player
         healthSlider.value = fullHealth; //sets the starting value of the health slider to the full health of the player
+
+        //initial player respawn point
+        respawnPoint = transform.position;
     }
 	
 	// Update is called once per frame
@@ -44,7 +48,18 @@ public class playerHealth : MonoBehaviour {
 
     public void makeDead() {
         Instantiate(deathFX, transform.position, transform.rotation); //spawns the death particle effects
-        Destroy(gameObject); //destroys the player
-        SceneManager.LoadScene("CaveTilemap"); //reloads the scene
+        transform.position = respawnPoint; //moves the player to the position of the currnet checkpoint
+        currentHealth = fullHealth;
+        healthSlider.value = currentHealth;
+        //Destroy(gameObject); //destroys the player
+        //SceneManager.LoadScene("CaveTilemap"); //reloads the scene
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Checkpoint")
+        {
+            respawnPoint = other.transform.position; //makes the respawn point at the position of the trigger
+        }
     }
 }
