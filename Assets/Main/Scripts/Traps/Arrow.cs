@@ -12,6 +12,9 @@ public class Arrow : MonoBehaviour {
     //private int HitCounter = 0;
     private bool stuck = false;
 
+    //for destroying the arrow
+    public GameObject particleFX;
+
     // Use this for initialization
     void Awake()
     {
@@ -44,6 +47,8 @@ public class Arrow : MonoBehaviour {
             //play particle effect
             clonerb.constraints = RigidbodyConstraints2D.FreezeAll;
             stuck = true;
+            Instantiate(particleFX, transform.position, transform.rotation); //spawns the particle effects
+            Destroy(gameObject);
         }
     }
 }
