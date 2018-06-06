@@ -28,7 +28,7 @@ public class energyGun : MonoBehaviour {
             GameObject thePlayer = GameObject.Find("player"); //find's the player game object
             playerController playerScript = thePlayer.GetComponent<playerController>(); //
             playerScript.hasGun = true; //activates the bool for allowing the player to shoot
-            Instantiate(playerGun, gunArm.transform); //instantiate the torch at the torch arm's location with 0 rotation
+            Instantiate(playerGun, gunArm.transform); //instantiate the gun at the gun arm's location with 0 rotation
             Destroy(gameObject); //destroys the gun object
 
         }
