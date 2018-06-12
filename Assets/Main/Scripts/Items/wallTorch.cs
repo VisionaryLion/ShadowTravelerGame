@@ -25,7 +25,7 @@ public class wallTorch : MonoBehaviour {
         if (other.tag == "Player")
         {
             Instantiate(playerTorch, torchArm.transform); //instantiate the torch at the torch arm's location with 0 rotation
-            Destroy(gameObject); //destroys the torch object
+            //Destroy(gameObject); //destroys the torch object
 
         }
     }
