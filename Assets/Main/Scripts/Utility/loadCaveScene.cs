@@ -21,7 +21,7 @@ public class loadCaveScene : MonoBehaviour {
         //only load the scene if the object is tagged as player
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene("CaveTilemap"); //loads assigned scene
+            SceneManager.LoadScene("CaveTest-CB"); //loads assigned scene
         }
     }
 }
