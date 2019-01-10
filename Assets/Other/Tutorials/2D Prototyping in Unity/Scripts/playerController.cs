@@ -25,6 +25,12 @@ public class playerController : MonoBehaviour {
     float nextFire = 0f; //time when the player can fire again
     public bool hasGun = false; //starts the player without a gun
 
+    //torch variables
+    public bool hasTorch = false; //starts the player without a torch
+    float torchCheckRadius = 0.1f; //size of the torch check circle
+    public LayerMask torchLayer; //layer to check for the torch
+    public Transform torchCheck; //position of the torch check circle
+
     // Use this for initialization
     void Start () {
         myRB = GetComponent<Rigidbody2D>(); //GetComponent looks at the asset the script is attached to for a certain object
@@ -69,7 +75,12 @@ public class playerController : MonoBehaviour {
         } else if (move < 0 && facingRight) { 
             flip(); //call the flip function
         }
-	}
+
+        //check if we picked up a torch
+        hasTorch = Physics2D.OverlapCircle(torchCheck.position, torchCheckRadius, torchLayer); //OverlapCircle creates the circle out of the variables defined under //jumping variables
+        myAnim.SetBool("hasTorch", hasTorch); //assigns isGrounded (parameter from the animator) to the bool variable that checks if the player is grounded or not
+
+    }
 
     //flips the player's facing direction
     void flip() {
